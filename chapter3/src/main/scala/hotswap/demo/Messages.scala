@@ -1,5 +1,9 @@
 package hotswap.demo
 
-class Messages {
+sealed trait HotSwapMsg
 
+object HotSwapMsg {
+  case object Ping extends  HotSwapMsg
+  case object Pong extends  HotSwapMsg
 }
+
